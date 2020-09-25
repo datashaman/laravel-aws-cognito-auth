@@ -1,7 +1,13 @@
 {
   "name": "pallant/laravel-aws-cognito-auth",
   "description": "An authentication driver for Laravel for authenticating users in AWS Cognito User Pools",
-  "keywords": ["php", "laravel", "auth", "aws", "cognito"],
+  "keywords": [
+    "php",
+    "laravel",
+    "auth",
+    "aws",
+    "cognito"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -12,8 +18,15 @@
   "require": {
     "php": ">= 5.6.4",
     "aws/aws-sdk-php-laravel": "^3.1",
-    "nesbot/carbon": "~1.20 || ~2.00",
-    "laravel/framework": "^5.7.0 || ^6.0.0 || ^7.0.0"
+    "laravel/framework": "^5.7.0 || ^6.0.0 || ^7.0.0",
+    "nesbot/carbon": "~1.20 || ~2.00"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Pallant\\LaravelAwsCognitoAuth\\ServiceProvider"
+      ]
+    }
   },
   "autoload": {
     "psr-4": {
